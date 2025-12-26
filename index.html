@@ -3,30 +3,41 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>公佈欄</title>
-    
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
 
   </head>
     
   <body>
-  <h2>NCYU 公佈欄</h2>
-
-<h3>標題</h3>
-<input type="text" id="title" size="50">
-
-<h3>內容</h3>
-<textarea id="content" cols="50" rows="8"></textarea>
-<br>
-
-<button id="btn">送出</button>
-
-<div id="list">
-    <div id="news">
-        <h2>期末考重要訊息</h2>
-        <p>全校期末考全面 All Pass!</p>
-        <hr>
+  <!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的虛擬鋼琴</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="piano-container">
+        <h1>Web Piano</h1>
+        <div class="piano">
+            <div class="key white" data-note="C" data-key="A"><span>A</span></div>
+            <div class="key black" data-note="Cs" data-key="W"><span>W</span></div>
+            <div class="key white" data-note="D" data-key="S"><span>S</span></div>
+            <div class="key black" data-note="Ds" data-key="E"><span>E</span></div>
+            <div class="key white" data-note="E" data-key="D"><span>D</span></div>
+            <div class="key white" data-note="F" data-key="F"><span>F</span></div>
+            <div class="key black" data-note="Fs" data-key="T"><span>T</span></div>
+            <div class="key white" data-note="G" data-key="G"><span>G</span></div>
+            <div class="key black" data-note="Gs" data-key="Y"><span>Y</span></div>
+            <div class="key white" data-note="A" data-key="H"><span>H</span></div>
+            <div class="key black" data-note="As" data-key="U"><span>U</span></div>
+            <div class="key white" data-note="B" data-key="J"><span>J</span></div>
+        </div>
     </div>
-</div>
+    <script src="script.js"></script>
+</body>
+</html>
     <script  src="./script.js"></script>
 
   </body>

@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    font-family: Arial, sans-serif;
+}
+
+.piano-container {
+    text-align: center;
+}
+
+h1 { color: white; margin-bottom: 20px; }
+
+.piano {
+    display: flex;
+    position: relative;
+}
+
+.key {
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.1s;
+}
+
+.white {
+    width: 60px;
+    height: 200px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px;
+    z-index: 1;
+}
+
+.black {
+    width: 40px;
+    height: 120px;
+    background: black;
+    color: white;
+    margin-left: -20px;
+    margin-right: -20px;
+    z-index: 2;
+    border-radius: 0 0 3px 3px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.key.active {
+    height: 195px;
+    background: #ddd;
+}
+
+.black.active {
+    height: 115px;
+    background: #333;
+}
